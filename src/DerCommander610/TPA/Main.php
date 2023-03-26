@@ -7,8 +7,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 
-class TPA extends PluginBase 
-{
+class Main extends PluginBase{
 
     private $TPA = [];
 
