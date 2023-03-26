@@ -3,3 +3,21 @@ version: 1.0.0
 main: DerCOmmander610\TPA\Main
 api: [4.17.1]
 author: DerComamnder620
+
+commands:
+  tpa:
+    description: "Schicke jemanden eine TPA"
+    permission: tpa.cmd
+  tpaccept:
+    description: "Nehme deine zuletzt erhaltene TPA anfrage an"
+    permission: tpaccept.cmd
+  tpadecline:
+    description: "Lehne deine zuletzt erhaltene TPA anfrage ab"
+    permission: tpadecline.cmd
+permissions:
+   tpa.cmd:
+     default: true
+   tpaccept.cmd:
+     default: true
+   tpadecline.cmd:
+     default: true
