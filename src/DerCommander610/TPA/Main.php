@@ -22,10 +22,6 @@ class TPA extends PluginBase{
                  }
                  if(isset($args[0])){
                      $sender->sendMessage("§cDu musst den Spielernamen eingeben um den eine TPA anfrage schicken zu können!");
-                     $event->setMessage("§cDu musst den Spielernamen eingeben um den eine TPA anfrage schicken zu können!");
-                     @mkdir($this->getDataFolder());
-                     $this->getResource("tpa.yml")
-                     if($sender->setMessage($this->getConfig()->get("dont-writed-playername-message")))
                      return false;
                  }
 
@@ -33,18 +29,10 @@ class TPA extends PluginBase{
 
                  if(!$player){
                      $sender->sendMessage("§cDieser Spieler ist nicht Online!");
-                     $event->setMessage("§cDieser Spieler ist nicht Online!");
-                     @mkdir($this->getDataFolder());
-                     $this->getResource("tpa.yml")
-                     if($sender->setMessage($this->getConfig()->get("player-not-found-message")))
                      return false;
                  }
                  if($sender->getName() == $player->getName()){
                      $sender->sendMessage("§cNetter versuch!");
-                     $event->setMessage("§cNetter versuch!");
-                     @mkdir($this->getDataFolder());
-                     $this->getResource("tpa.yml")
-                     if($sender->setMessage($this->getConfig()->get("giving-himself")))
                          return false;
                  }
 
@@ -88,7 +76,7 @@ class TPA extends PluginBase{
                   case "tpadecline":
                       if(!$sender instanceof Player) {
                           $sender->sendMessage("Du kannst diesen befehl nur Ingame verwenden!");
-                          return false:
+                          return false;
 
                           {
 
