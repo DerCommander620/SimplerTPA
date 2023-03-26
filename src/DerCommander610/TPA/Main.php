@@ -91,8 +91,9 @@ class Main extends PluginBase {
                       $sender->sendMessage("§cDu hast§e" . $sender->getName() . "`s §cTPA erfolgreich abgelehnt!");
                       $player->sendMessage("§e" . $sender->getName() . "§chat deine TPA abgelehnt!!");
                       break;
-        }
-        return true;
-    }
-  }
+         }
+         return true;
+     }
+   }
+ }
 }
