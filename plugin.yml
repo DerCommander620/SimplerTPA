@@ -1,6 +1,6 @@
 name: SimplerTPA
 version: 1.0.0
-main: DerCOmmander610\TPA\Main
+main: DerCommander610\TPA\Main
 api: [4.17.1]
 author: DerComamnder620
 
