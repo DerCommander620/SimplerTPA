@@ -17,7 +17,7 @@ class Main extends PluginBase {
          switch($command->getName()) {
 
              case "tpa":
-                 if(!$sender instanceof Player){
+                 if($sender instanceof Player){
                      $sender->sendMessage("Du kannst diesen befehl nur Ingame verwenden!");
                      return false;
                  }
@@ -44,7 +44,7 @@ class Main extends PluginBase {
                  break;
 
              case "tpaccept":
-                     if(!$sender instanceof Player) {
+                     if($sender instanceof Player) {
                          $sender->sendMessage("Du kannst diesen befehl nur Ingame verwenden!");
                          return false;
                      }
@@ -75,7 +75,7 @@ class Main extends PluginBase {
                   break;
 
                   case "tpadecline":
-                      if(!$sender instanceof Player) {
+                      if($sender instanceof Player) {
                           $sender->sendMessage("Du kannst diesen befehl nur Ingame verwenden!");
                           return false;
 
