@@ -4,8 +4,9 @@ namespace DerCommander610\TPA;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
+use jojoe77777\FormAPI;
 
 class Main extends PluginBase {
 
