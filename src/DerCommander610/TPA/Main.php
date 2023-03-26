@@ -94,4 +94,5 @@ class TPA extends PluginBase{
         }
         return true;
     }
+  }
 }
